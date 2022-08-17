@@ -1,3 +1,4 @@
+// Опредиление устройства
 const isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
@@ -24,9 +25,11 @@ const isMobile = {
         );
     }
 };
+
+// добавляем класс для body
 if (isMobile.any()) {
     document.body.classList.add('_touch');
-
+// добавляем класс подменю menu_arrow
     let menuArrows = document.querySelectorAll('.menu_arrow');
     if (menuArrows.length > 0) {
         for (let index = 0; index < menuArrows.length; index++) {
