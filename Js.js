@@ -42,3 +42,28 @@ if (isMobile.any()) {
 } else {
     document.body.classList.add('_pc');
 }
+
+const swiper = new Swiper('.swiper', {
+    spaceBetween: 30,
+    parallax: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    loop : true,
+    autoplay: {
+        delay: 2500,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+    },
+    speed: 2500,
+
+});
