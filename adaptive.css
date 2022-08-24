@@ -1,10 +1,22 @@
-@media (min-width: 767px) {
+@media (min-width: 950px) {
+    .menu_list {
+        display: flex;
+        gap: 40px;
+    }
     .menu_sub_list {
         transform: translate(0, -10%);
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
         transition: all 0.3s ease 0s;
+    }
+    .menu_icon {
+        display: none;
+    }
+    .menu_sub_list {
+        top: 73%;
+        background-color: #FFFFFF;
+        position: absolute;
     }
 }
 @media (max-width: 1440px) {
@@ -57,7 +69,6 @@
         position: absolute;
         left: 170px;
         top: -33px;
-        /* background-color: #FFFFFF; */
         padding: 15px;
         min-width: 200px;
     }
@@ -101,9 +112,151 @@
     }
 }
 @media (max-width: 1248px) {
-    .swiper {
-        display: none;
+    #slider_txt {
+        margin: 145px 0 0 40px;
+        position: relative;
+        z-index: 5;
     }
+    #slider_txt h2 {
+        font-size: 31px;
+        line-height: 42px;
+    }
+    #slider_txt p {
+        margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+    #slider_txt button {
+        padding: 10px 48px;
+        font-size: 18px;
+    }
+    #slider_flex img {
+        position: absolute;
+        right: 0;
+        z-index: 2;
+    }
+}
+@media (max-width: 950px) {
+    .menu_icon {
+        display: block;
+        z-index: 5;
+        position: relative;
+        width: 33px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .menu_icon span,
+    .menu_icon::before,
+    .menu_icon::after {
+        left: 0;
+        position: absolute;
+        z-index: 6;
+        height: 15%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: black;
+    }
+    .menu_icon::before,
+    .menu_icon::after {
+        content: "";
+    }
+    .menu_icon::before {
+        top: 0;
+    }
+    .menu_icon::after {
+        bottom: 0;
+    }
+    .menu_icon span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    .menu_icon._active span {
+        transform: scale(0) translate(0px, -50%);
+    }
+    .menu_icon._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+
+    }
+    .menu_icon._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+
+    }
+    .menu_box_list {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background: #F8F9FA;
+        padding: 66px 30px 30px 26px;
+        transition: right 0.3s ease 0s;
+        overflow: auto;
+    }
+    .menu_box_list._active {
+        right: 0;
+    }
+    .menu_list li {
+        margin: 0 0 68px 0;
+        flex-wrap: wrap;
+    }
+    .menu_list li._active .menu_sub_list {
+        display: block;
+    }
+    .menu_list li:last-child {
+        margin-bottom: 0;
+    }
+    .menu_link {
+        font-size: 34px;
+    }
+    .menu_sub_list {
+        position: relative;
+        flex: 1 1 100%;
+        background: white;
+        display: none;
+        margin-top: 30px;
+    }
+
+    .menu_sub_list li {
+        margin: 0 0 10px 0;
+    }
+    .menu_sub-link {
+        font-size: 26px;
+    }
+}
+@media (max-width: 900px) {
+    #swiper {
+        max-height: 400px;
+    }
+    #slider_flex img {
+        right: -75px;
+    }
+    .swiper-pagination-bullet {
+        width: 90px;
+    }
+}
+@media (max-width: 767px) {
+    #swiper {
+        max-height: 300px;
+    }
+    #slider_txt {
+         margin: 50px  0  0 40px;
+     }
+    #slider_txt h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #slider_txt p {
+        margin-bottom: 5px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+    #slider_txt button {
+        padding: 1px 25px;
+        font-size: 10px;
+    }
+
 }
 @media (max-width: 640px) {
     .save_box_items {
@@ -113,4 +266,16 @@
     .footer_content_box {
         flex-direction: column;
     }
+}
+@media (max-width: 600px) {
+    #swiper {
+        max-height: 200px;
+    }
+    #slider_txt {
+        margin: 18px 40px 0 0;
+    }
+    #slider_txt {
+        text-align: right;
+    }
+
 }

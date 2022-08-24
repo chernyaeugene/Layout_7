@@ -93,7 +93,6 @@ p {
 }
 .header_menu_container,
 .header_menu_content_box,
-.menu_list,
 .header_menu_cart,
 .search_label,
 .shop_box_img,
@@ -163,7 +162,6 @@ p {
 .header_menu,
 .shop_img_1 img,
 .shop_img_2 img,
-.slider_txt img,
 .see_box_items div,
 .looking_search,
 .looking_search_input,
@@ -185,7 +183,6 @@ p {
   padding: 30px 0 15px;
 }
 .menu_list {
-  gap: 40px;
   @extend %font_inter;
   text-transform: uppercase;
 }
@@ -196,9 +193,6 @@ p {
   text-decoration: underline;
 }
 .menu_sub_list {
-  position: absolute;
-  top: 73%;
-  background-color: #FFFFFF;
   padding: 15px;
   min-width: 200px;
 }
@@ -247,8 +241,7 @@ body._pc .menu_list > li:hover .menu_sub_list {
   background-color: white;
 }
 .shop_img_1 img,
-.shop_img_2 img,
-.slider_txt img {
+.shop_img_2 img {
   object-fit: cover;
 }
 .swiper-pagination-bullet {
