@@ -7,3 +7,110 @@
         transition: all 0.3s ease 0s;
     }
 }
+@media (max-width: 1440px) {
+    .shop_box_img {
+        flex-direction: column;
+        align-items: center;
+    }
+    .see_item_1,
+    .see_item_2 {
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 1365px) {
+    .see_box_items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 1325px) {
+    .ideas_box_content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ideas_box_content img {
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 1280px) {
+    .footer_menu_list {
+        flex-direction: column;
+    }
+    .footer_logo_box {
+        margin-right: 100px;
+    }
+    .footer_menu_box_list {
+        position: relative;
+    }
+    .footer_menu_list li {
+        margin-bottom: 20px;
+    }
+    .footer_menu_list li:last-child {
+        margin-bottom: 0;
+    }
+    .footer_menu_sub_list {
+        transform: translate(0, -10%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: all 0.3s ease 0s;
+        position: absolute;
+        left: 170px;
+        top: -33px;
+        /* background-color: #FFFFFF; */
+        padding: 15px;
+        min-width: 200px;
+    }
+    .footer_menu_sub_list li {
+        margin: 0 0 10px 0;
+    }
+    .footer_menu_sub-link:hover {
+        text-decoration: underline;
+    }
+    .footer_menu_link {
+        max-width: 200px;
+    }
+    body._touch .menu_list >li,
+    body._touch .footer_menu_list >li {
+        display: flex;
+        align-items: center;
+    }
+    body._touch .menu_link {
+        flex: 1 1 auto;
+    }
+    body._touch .menu_arrow {
+        display: block;
+        width: 0;
+        height: 0;
+        margin: 0 0 0 7px;
+        transition: transform 0.3s ease 0s;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid black;
+    }
+    body._touch .menu_list > li._active .menu_sub_list,
+    body._touch .footer_menu_list > li._active .footer_menu_sub_list {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, 0);
+        pointer-events: all;
+    }
+    body._touch .menu_list > li._active .menu_arrow,
+    body._touch .footer_menu_list > li._active .footer_menu_arrow {
+        transform: rotate(-180deg);
+    }
+}
+@media (max-width: 1248px) {
+    .swiper {
+        display: none;
+    }
+}
+@media (max-width: 640px) {
+    .save_box_items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_content_box {
+        flex-direction: column;
+    }
+}

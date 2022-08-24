@@ -42,18 +42,14 @@ if (isMobile.any()) {
 } else {
     document.body.classList.add('_pc');
 }
-
+// Слайдер
 const swiper = new Swiper('.swiper', {
     spaceBetween: 30,
     parallax: true,
-
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -65,5 +61,4 @@ const swiper = new Swiper('.swiper', {
         disableOnInteraction: false,
     },
     speed: 2500,
-
 });

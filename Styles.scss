@@ -217,32 +217,7 @@ body._pc .menu_list > li:hover .menu_sub_list {
   transform: translate(0, 0);
   pointer-events: all;
 }
-body._touch .menu_list >li {
-  display: flex;
-  align-items: center;
-}
-body._touch .menu_link {
-  flex: 1 1 auto;
-}
-body._touch .menu_arrow {
-  display: block;
-  width: 0;
-  height: 0;
-  margin: 0 0 0 7px;
-  transition: transform 0.3s ease 0s;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 10px solid black;
-}
-body._touch .menu_list > li._active .menu_sub_list {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0, 0);
-  pointer-events: all;
-}
-body._touch .menu_list > li._active .menu_arrow {
-  transform: rotate(-180deg);
-}
+
 .swiper {
   max-width: 1295px;
   max-height: 550px;
