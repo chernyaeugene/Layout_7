@@ -162,6 +162,7 @@ p {
 .header_menu,
 .shop_img_1 img,
 .shop_img_2 img,
+.ideas_box_content img,
 .see_box_items div,
 .looking_search,
 .looking_search_input,
@@ -241,13 +242,12 @@ body._pc .menu_list > li:hover .menu_sub_list {
   background-color: white;
 }
 .shop_img_1 img,
-.shop_img_2 img {
+.shop_img_2 img,
+.ideas_box_content img {
   object-fit: cover;
 }
 .swiper-pagination-bullet {
-  width: 194px;
   height: 3px;
-  background: #000000;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {

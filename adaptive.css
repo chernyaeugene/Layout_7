@@ -1,4 +1,7 @@
 @media (min-width: 950px) {
+    .header_menu {
+        width: 100%;
+    }
     .menu_list {
         display: flex;
         gap: 40px;
@@ -17,6 +20,10 @@
         top: 73%;
         background-color: #FFFFFF;
         position: absolute;
+    }
+    .swiper-pagination-bullet {
+        width: 194px;
+        background: #000000;
     }
 }
 @media (max-width: 1440px) {
@@ -112,25 +119,35 @@
     }
 }
 @media (max-width: 1248px) {
-    #slider_txt {
+    #slider_txt,
+    #slider_txt_2,
+    #slider_txt_3 {
         margin: 145px 0 0 40px;
         position: relative;
         z-index: 5;
     }
-    #slider_txt h2 {
+    #slider_txt h2,
+    #slider_txt_2 h2,
+    #slider_txt_3 h2 {
         font-size: 31px;
         line-height: 42px;
     }
-    #slider_txt p {
+    #slider_txt p,
+    #slider_txt_2 p,
+    #slider_txt_3 p {
         margin-bottom: 25px;
         font-size: 14px;
         line-height: 23px;
     }
-    #slider_txt button {
+    #slider_txt button,
+    #slider_txt_2 button,
+    #slider_txt_3 button {
         padding: 10px 48px;
         font-size: 18px;
     }
-    #slider_flex img {
+    #slider_flex img,
+    #slider_flex_2 img,
+    #slider_flex_3 img {
         position: absolute;
         right: 0;
         z-index: 2;
@@ -217,12 +234,15 @@
         display: none;
         margin-top: 30px;
     }
-
     .menu_sub_list li {
         margin: 0 0 10px 0;
     }
     .menu_sub-link {
         font-size: 26px;
+    }
+    .swiper-pagination-bullet {
+        width: 50px;
+        background: white;
     }
 }
 @media (max-width: 900px) {
@@ -232,27 +252,32 @@
     #slider_flex img {
         right: -75px;
     }
-    .swiper-pagination-bullet {
-        width: 90px;
-    }
 }
 @media (max-width: 767px) {
     #swiper {
         max-height: 300px;
     }
-    #slider_txt {
+    #slider_txt,
+    #slider_txt_2,
+    #slider_txt_3 {
          margin: 50px  0  0 40px;
      }
-    #slider_txt h2 {
+    #slider_txt h2,
+    #slider_txt_2 h2,
+    #slider_txt_3 h2 {
         font-size: 20px;
         line-height: 30px;
     }
-    #slider_txt p {
+    #slider_txt p,
+    #slider_txt_2 p,
+    #slider_txt_3 p {
         margin-bottom: 5px;
-        font-size: 10px;
+        font-size: 9px;
         line-height: 15px;
     }
-    #slider_txt button {
+    #slider_txt button,
+    #slider_txt_2 button,
+    #slider_txt_3 button {
         padding: 1px 25px;
         font-size: 10px;
     }
@@ -271,11 +296,13 @@
     #swiper {
         max-height: 200px;
     }
-    #slider_txt {
-        margin: 18px 40px 0 0;
-    }
-    #slider_txt {
+    #slider_txt,
+    #slider_txt_2,
+    #slider_txt_3 {
+        margin: 10px 15px 0 0;
         text-align: right;
     }
-
+    .search_input {
+        max-width: 80px;
+    }
 }
