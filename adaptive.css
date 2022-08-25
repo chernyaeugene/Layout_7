@@ -1,4 +1,7 @@
 @media (min-width: 950px) {
+    .header_content_box {
+        padding-top: 125px;
+    }
     .header_menu {
         width: 100%;
     }
@@ -125,7 +128,7 @@
     #slider_txt,
     #slider_txt_2,
     #slider_txt_3 {
-        margin: 145px 0 0 40px;
+        margin: 65px 0 0 40px;
         position: relative;
         z-index: 5;
     }
@@ -147,6 +150,7 @@
     #slider_txt_3 button {
         padding: 10px 48px;
         font-size: 18px;
+        margin-bottom: 40px;
     }
     #slider_flex img,
     #slider_flex_2 img,
@@ -157,12 +161,15 @@
     }
 }
 @media (max-width: 950px) {
+    .header_content_box {
+        padding-top: 85px;
+    }
     .menu_icon {
         display: block;
         z-index: 5;
         position: relative;
-        width: 33px;
-        height: 20px;
+        width: 25px;
+        height: 15px;
         cursor: pointer;
     }
     .menu_icon span,
@@ -245,7 +252,7 @@
     }
     .swiper-pagination-bullet {
         width: 50px;
-        background: white;
+        background: black;
     }
     .thing_btn {
         padding: 5px 33px 5px 32px;
@@ -286,6 +293,7 @@
     #slider_txt_3 button {
         padding: 1px 25px;
         font-size: 10px;
+        margin-bottom: 20px;
     }
 
 }
@@ -309,6 +317,6 @@
         text-align: right;
     }
     .search_input {
-        max-width: 80px;
+        max-width: 50px;
     }
 }

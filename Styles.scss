@@ -87,10 +87,6 @@ p {
   padding: 0 45px;
   margin: 0 auto;
 }
-.header_content_box {
-  padding-top: 125px;
-  min-width: 0;
-}
 .header_menu_container,
 .header_menu_content_box,
 .header_menu_cart,
@@ -160,8 +156,8 @@ p {
   font-family: 'Conv_Inter-VariableFont_slnt,wght', sans-serif;
 }
 .header_menu,
-.shop_img_1 img,
-.shop_img_2 img,
+.logo img,
+.shop_link_img,
 .ideas_box_content img,
 .see_box_items div,
 .see_item_img,
@@ -242,8 +238,8 @@ body._pc .menu_list > li:hover .menu_sub_list {
 .slider_txt button:hover {
   background-color: white;
 }
-.shop_img_1 img,
-.shop_img_2 img,
+.logo img,
+.shop_link_img,
 .ideas_box_content img,
 .see_item_img {
   object-fit: cover;
@@ -262,11 +258,12 @@ body._pc .menu_list > li:hover .menu_sub_list {
 .sub_tittle {
   margin-bottom: 55px;
 }
-.shop_box_img, .shop_img_2 {
-  overflow: hidden;
+.shop_img_2 {
+  justify-content: center;
 }
 .shop_img_1,
 .shop_img_2 {
+  flex-wrap: wrap;
   max-width: calc(1350px / 2);
 }
 .main_save {
@@ -346,6 +343,10 @@ body._pc .menu_list > li:hover .menu_sub_list {
 }
 .ideas_box_content {
   margin-bottom: 74px;
+}
+.ideas_box_content img {
+  max-width: 620px;
+  max-height: 420px;
 }
 .ideas_box_txt p {
   margin-bottom: 23px;
