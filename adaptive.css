@@ -25,6 +25,9 @@
         width: 194px;
         background: #000000;
     }
+    .thing_btn {
+        padding: 16px 33px 17px 32px;
+    }
 }
 @media (max-width: 1440px) {
     .shop_box_img {
@@ -243,6 +246,9 @@
     .swiper-pagination-bullet {
         width: 50px;
         background: white;
+    }
+    .thing_btn {
+        padding: 5px 33px 5px 32px;
     }
 }
 @media (max-width: 900px) {

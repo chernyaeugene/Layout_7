@@ -178,6 +178,7 @@ p {
 .shop_img_2 img,
 .ideas_box_content img,
 .see_box_items div,
+.see_item_img,
 .looking_search,
 .looking_search_input,
 .thing_email,
@@ -255,7 +256,8 @@ body._pc .menu_list > li:hover .menu_sub_list {
 
 .shop_img_1 img,
 .shop_img_2 img,
-.ideas_box_content img {
+.ideas_box_content img,
+.see_item_img {
   object-fit: cover; }
 
 .swiper-pagination-bullet {
@@ -444,8 +446,7 @@ input::placeholder {
   max-width: 115px;
   border-radius: 0 54px 54px 0;
   background: #0f141e;
-  color: #FFFFFF;
-  padding: 16px 33px 17px 32px; }
+  color: #FFFFFF; }
 
 footer {
   padding: 44px 0 80px;
