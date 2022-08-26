@@ -276,7 +276,8 @@ body._pc .menu_list > li:hover .menu_sub_list {
 .shop_img_1,
 .shop_img_2 {
   flex-wrap: wrap;
-  max-width: calc(1350px / 2); }
+  max-width: calc(1350px / 2);
+  }
 
 .main_save {
   padding: 19px 0 28px; }
